@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url("food.jpg");
+    background-size: cover;
+    
+}
+
+nav{
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    position: relative;
+    height: 70px;
+}
+
+.logo h1{
+    color: #43f706;
+    font-size: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: white;
+    font-weight: 300;
+}
+nav ul li:hover{
+    border: 3px solid red;
+    background-color: blue;
+}
+nav ul li a:active{
+    border: 3px solod red;
+    background-color: blue;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+.black-box{
+    height: 90vh;
+    width: 25%;
+    color:white;
+    background-color: black;   /*the manu of items*/
+    margin-top: 10px;
+    position:fixed;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.main-manu{                 /*heading main manu*/
+    margin-left: 30px;   
+}
+.main-item{
+    text-align: center;
+    color: rgb(153, 248, 20);   /*item about*/
+    margin: 10px 0px;
+}
+.items{
+    color: rgb(252, 252, 255);
+    background-color: none;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: red;
+}
+.small-image{
+    height: 200px;
+    width: 200px;
+    background-image: url(salad.jpg);
+    background-size: cover;
+    border: 10px solid rgb(251, 250, 250);  
+    border-radius: 50%;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 50px;
+    position: relative;
+    left: 200px;
+}
+.small-image2{
+    height: 200px;
+    width: 200px;
+    background-image: url(onion.jpg);
+    background-size: cover;
+    border: 10px solid rgb(251, 250, 250);  /*image of onion rings ,small image*/
+    border-radius: 50%;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 100px;
+    position: relative;
+    left: 200px;
+}
+.big-image{
+    height: 300px;
+    width: 300px;
+    background-image: url(burger.jpg);      /*image of burder ,big image*/
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+    float: right;
+    position: fixed;
+    top: 220px;
+    right: 200px;
+}
+.show{
+    display: none;
+}
+.show1{
+    display: none;
+}
+
+
+
+
+@media (max-width:1024px) {
+    body{
+        background-image: none;
+        background-color: rgb(252, 250, 250);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo h1{
+        font-size: 20px;
+    }
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: black;
+        gap: 0;
+        height: 100vh;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+        margin: 5px;
+        background-color: black;
+    }
+    nav ul li a{
+        color: white;
+        
+    }
+    
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+    .black-box{
+        display: none;
+    }
+    .small-image{
+        display: none;
+    }
+    .small-image2{
+        display: none;
+    }
+    .show{
+        height: auto;
+        width: auto;
+        margin: 10px ;  
+        background-image:url(pizza.jpg);
+        background-size: cover;
+        background-position: center;
+        
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        border: 5px solid rgb(251, 10, 10);
+        display: block;
+        align-items: center;
+    }
+    .show h1{
+        color: white;
+        display: flex;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .show p{
+        margin-top: 30px;
+        margin-left: 30px;
+        color: white;
+    }
+    .show button{
+        height: 50px;
+        width: 140px;
+        margin-top: 10px;
+        bottom: 10px;
+        margin: 30px;
+        border-radius: 20px;
+        background-color: #f7e306;
+        border-color: 5px solid white;
+    }
+    .show1{
+        height: auto;
+        width: auto;
+        background-color: red;
+        margin: 10px;
+        display: block;
+        background-image: url(burger2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        border: 5px solid red;
+        
+    }
+    .show1 h1{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .show1 h3{
+        text-align: left;
+        color: white;
+        margin-left: 20px;
+    }
+    .show1 p{
+        color: white;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    .show1 button{
+        height:50px;
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border-color: 5px solid white;
+        margin: 30px;
+        background-color: #f7e306;
+        
+    }
+    
+    
+
+}
+@media(max-width :1210px){
+    .big-image{
+        display: none;
+    }
+}

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="HomePage.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>FASTFOOD.COM</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Menufood.html">Menu</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="nitin()"></i>
+        </div>
+    </nav>
+
+    <div class="black-box">         <!--black box is show manu-->
+        <h1>WELLCOME !</h1><br>
+        <h2 class="main-manu">MAIN MANU:</h2>
+        <h2 class="main-item">BURGERS:</h2>
+        <ul class="items">
+            <li><a href="Menufood.html">Classic cheeseburger</a></li>
+            <li><a href="Menufood.html">Bacon cheeseburger</a></li>
+            <li><a href="Menufood.html">Vaggie burger</a></li>
+            
+        </ul>
+        <h2 class="main-item">SALAD:</h2>
+        <ul class="items">
+            <li><a href="Menufood.html">Garden salad</li>
+            <li><a href="Menufood.html">Caesar salad</a></li>
+            <li><a href="Menufood.html">Simple salad</a></li>
+        </ul>
+        <h2 class="main-item">FIRES & SIDES :</h2>
+        <ul class="items">
+            <li><a href="Menufood.html">French fries</a></li>
+            <li><a href="Menufood.html">Sweet potato fries</a></li>
+            <li><a href="Menufood.html">Onian Rings</a></li>
+        </ul>
+        <h2 class="main-item">DISSERTS:</h2>
+        <ul class="items">
+            <li><a href="Menufood.html">Apple Pea</a></li>
+            <li><a href="Menufood.html">Chocolate CHip cookies</a></li>
+            <li><a href="Menufood.html">Ice Cream Cone</a></li>
+        </ul>
+        <h2 class="main-item">DRINKS:</h2>
+        <ul class="items ">
+            <li><a href="Menufood.html">Soft Drinks</a></li>
+            <li><a href="Menufood.html">Iced Tea</a></li>
+            <li><a href="Menufood.html">Coffee</a></li>
+            <li><a href="Menufood.html">Milkshakes</a></li>
+        </ul>
+
+    </div>
+    <div class="small-image">
+        <!--this is a small image-->
+    </div>
+    <div class="small-image2">
+        <!--this is a secound small image-->
+    </div>
+    <div class="big-image">
+        <!--this is a big image-->
+    </div>
+    <div class="show">
+        <h1>FASTFOOD<br>FULL FLAVOR</h1>
+        <p>Our commitment to quick service
+            <br> never compromises on taste.</p>
+            <button>Order Now</button>
+    </div>
+    <div class="show1">
+        <h1>BURGERS</h1><br>
+        <h3>PAKS</h3><br>
+        <p>differend different type of burgers supply<br> and fast diliveries availabal</p>
+            <button>Order Now</button><br>
+    </div>
+    
+
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function nitin(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "1030px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

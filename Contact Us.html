@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Contact US.css">
+</head>
+<body>
+
+    
+    <nav>
+        <div class="logo">
+            <h1>FASTFOOD.COM</h1>
+        </div>
+        <ul id="menuList">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Menufood.html">Menu</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="nitin()"></i>
+        </div>
+    </nav>
+    <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Illo numquam dolores facere atque veritatis fugiat voluptas,
+                     vitae a incidunt minima mollitia id! Impedit debitis dolorum 
+                     suscipit quis perferendis magni repellendus.</p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Near bhavic vidhyapith,<br>Silver Oak College Campus<br>Ahmedabad-380035</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>931-630-7685</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>fastfood2024@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Type Your Massege...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+    </section>
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function nitin(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "1030px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

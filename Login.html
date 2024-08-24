@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Facebook login page</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <h1>FASTFOOD.COM</h1>
+            </div>
+            <ul id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="Menufood.html">Menu</a></li>
+                <li><a href="Contact Us.html">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="nitin()"></i>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="leftpart">
+                <h1>facebook</h1>
+                <h3>Facebook helps you connect and share with the
+                    people in your life
+                </h3>
+            </div>
+            <div class="Rightpart">
+                <div class="loginpage">
+                    <form>
+                        <input type="text" placeholder="Email or Phone number">
+                        <input type="password" placeholder="Password">
+                        <input type="submit">
+                    </form>
+                    <p>Forgot Password ?</p>
+                    <hr>
+                    <div class="createaccount">
+                        Create a new account
+                    </div>
+                </div>
+                <span>Create a page for a well-know person, Orchestra or business</span>
+            </div>
+        </div>
+        <script>
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+    
+            function nitin(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "1030px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+            
+        </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    
+    </body>
+</html>
